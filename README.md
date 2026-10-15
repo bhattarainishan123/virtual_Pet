@@ -26,4 +26,4 @@ venv\Scripts\activate
 ________________________________________________________________________________________
 
 Install all the required libraries : 
-pip install flask flask-login pandas matplotlib pytest ( for mac) 
+pip install flask flask-login pandas matplotlib pytest 
