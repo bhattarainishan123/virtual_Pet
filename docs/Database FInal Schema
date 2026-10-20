@@ -1,0 +1,4 @@
+User(id, username, password, created_at)
+Species(id, name, emoji, hunger_rate, happiness_rate, energy_rate, xp_multiplier)
+Pets(id, owner_id, species_id, name, hunger, happiness, energy, xp, level, las_updated, born_at)
+Activity(id, pet_id, action, created_at)
