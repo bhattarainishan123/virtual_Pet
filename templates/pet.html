@@ -10,24 +10,24 @@
         <div class="container mt-4">
             <div class="card">
                <div class="card-body">
-                  <h1>{{ emoji }} {{ name }}</h1>
-                  <p>{{ species }} · Level {{ level }}</p>
-                  <div>Hunger :{{hunger}}/100</div>
+                  <h1>{{ pet.emoji }} {{ pet.name }}</h1>
+                  <p>{{ pet.species }} · Level {{ pet.level }}</p>
+                  <div>Hunger :{{pet.hunger}}/100</div>
                   <div class="progress mb-3">
-                    <div class="progress-bar bg-danger" style="width: {{hunger}}%"></div>
+                    <div class="progress-bar bg-danger" style="width: {{pet.hunger}}%"></div>
                   </div>
-                  <div>Happiness :{{happiness}}/100</div>
+                  <div>Happiness :{{pet.happiness}}/100</div>
                   <div class="progress mb-3">
-                    <div class="progress-bar bg-info" style="width: {{happiness}}%"></div>
+                    <div class="progress-bar bg-info" style="width: {{pet.happiness}}%"></div>
                   </div>
-                  <div>Energy :{{energy}}/100</div>
+                  <div>Energy :{{pet.energy}}/100</div>
                   <div class="progress mb-3">
-                    <div class="progress-bar bg-warning" style="width: {{energy}}%"></div>
+                    <div class="progress-bar bg-warning" style="width: {{pet.energy}}%"></div>
                   </div>
                <div class="d-flex gap-2">
-                <from method="post" action="/feed">
-                    <button class="btn btn-success">Feed</button>
-                </from>
+                <form method="post" action="/feed">
+                    <button class="btn btn-danger">Feed</button>
+                </form>
                 <form method="post" action="/play">
                     <button class="btn btn-success">Play</button>
                 </form>
