@@ -28,3 +28,11 @@ def play():
 @app.route("/sleep", methods=["POST"])
 def sleep():
     return redirect(url_for("pet"))
+
+@app.route("/adopt")
+def adopt():
+    species = [
+        {"name": "Cat", "emoji": "🐱", "trait": "Independent"},
+        {"name": "Dog", "emoji": "🐶", "trait": "Loves attention"},
+    ]
+    return render_template("adopt.html", species=species)
