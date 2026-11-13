@@ -34,5 +34,8 @@ def adopt():
     species = [
         {"name": "Cat", "emoji": "🐱", "trait": "Independent"},
         {"name": "Dog", "emoji": "🐶", "trait": "Loves attention"},
+        {"name": "Bunny", "emoji": "🐰", "trait": "Always snacking"},
+        {"name": "Dragon", "emoji": "🐉", "trait": "Earns extra XP"},
+        {"name": "Unicorn", "emoji": "🦄", "trait": "Levels up fastest"},
     ]
     return render_template("adopt.html", species=species)
