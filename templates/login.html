@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mx-auto" style="max-width: 400px;">
+    <h1 class="text-center mb-4">Log in</h1>
+    <div class="card">
+        <div class="card-body">
+            <form method="post" action="/login">
+                <div class="mb-3">
+                    <label class="form-label" for="username">Username</label>
+                    <input class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" id="password" name="password" type="password" required>
+                </div>
+                <button class="btn btn-danger w-100">Log in</button>
+            </form>
+        </div>
+    </div>
+    <p class="text-center mt-3">
+        New here? <a href="{{ url_for('signup')}}">Create an account</a>
+    </p>
+</div>
+{% endblock %}
