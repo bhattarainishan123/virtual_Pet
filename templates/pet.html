@@ -4,7 +4,11 @@
 {% block content %}
 <div class="card">
     <div class="card-body">
-        <h1>{{ pet.emoji }} {{ pet.name }}</h1>
+        <h1>{{ pet.emoji }} 
+            <span class="pet-name">
+                {% for letter in pet.name %}<span style="animation-delay: {{ loop.index0*0.1 }}s">{{ letter }}</span>{% endfor %}
+            </span>
+        </h1>
         <p>{{ pet.species }} · Level {{ pet.level }}</p>
 
         <div>Hunger: {{ pet.hunger }} / 100</div>
